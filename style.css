@@ -123,9 +123,9 @@ li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-/* reverse order list counting down from 3 */
+/* reverse order list counting down from 4 */
 ol {
-    counter-reset: OrderedList 4;
+    counter-reset: OrderedList 5;
     list-style-type: none;
 }
 
