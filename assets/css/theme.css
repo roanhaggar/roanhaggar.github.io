@@ -1671,8 +1671,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 li:not(:last-child) {
-  font-size: 13pt;
   margin-bottom: 8px;
+}
+
+li {
+  font-size: 13pt;
 }
 
 
