@@ -1887,9 +1887,9 @@ li {
   border-radius: 40px 0 0 40px;
 }
 
-/* reverse order list counting down from 5 */
+/* reverse order list counting down from 6 */
 ol {
-    counter-reset: OrderedList 6;
+    counter-reset: OrderedList 7;
     list-style-type: none;
 }
 
