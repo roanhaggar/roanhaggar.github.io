@@ -1887,20 +1887,23 @@ li {
   border-radius: 40px 0 0 40px;
 }
 
-/* reverse order list counting down from 9 */
+/* reverse order list counting down from 10 */
 ol {
-    counter-reset: OrderedList 10;
+    counter-reset: OrderedList 11;
     list-style-type: none;
 }
 
 ol li{
-    padding-left: 2em;
-    text-indent: -3em;
+    position: relative;
+    padding-left: 2.5em;
+    text-indent: 0em;
     padding-bottom: 1em;
 }
 
 ol li:before {
     content: "[" counter(OrderedList) "]";
     counter-increment: OrderedList -1;
-    padding:1em;
+    position: absolute;
+    padding-left:0em;
+    text-indent: -2.5em;
 }
