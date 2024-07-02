@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><span class="text-header">Roan Haggar</span><p><span class="text-subheader">Astronomer at the University of Waterloo</span></p></a>
+        <a class="navbar-brand" href="index.html"><span class="text-header">Roan Haggar</span><p><span class="text-subheader">Astrophysicist at the University of Waterloo</span></p></a>
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +85,6 @@
     <p class="text-body-small">My research involves using cosmological simulations to probe the evolution of galaxies, groups and clusters. Some areas I am particularly focused on include:</p>
     <ul>
     <li>Infalling galaxies and galaxy groups</li>
-    <li>Galaxy cluster outskirts ('infall regions')</li>
     <li>The effects of environment on galaxy properties</li>
     <li>Cluster dynamics and dynamical states</li>
     <li>Large-scale structure and cosmic filaments</li>
@@ -98,23 +97,45 @@
 
 
   <div class="bg-light">
-    <div class="page-section pb-0  wow fadeInUp">
+    <div class="page-section-lowgap pb-0  wow fadeInUp">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-1 py-3">
+          </div>
+          <div class="col-lg-3">
+            <div class="img-place custom-img-1">
+              <figure>
+              <img src="../assets/img/dynamical_state.png" alt="" style="width:100%">
+              <figcaption><p style="margin-top:3px; margin-right:0px; margin-left:0px; font-size:9pt; text-align:left">UMAP embedding of galaxy clusters, showing how only some (not all) recently-forming clusters have low-concentration dark matter haloes.</p></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-lg-7 py-3">
+    <h2>Infalling groups</h2>
+    <p class="text-body-small">Galaxy clusters can be described in terms of their 'dynamical state', and are often split into early-forming 'relaxed' clusters, and recently-forming 'disturbed' clusters.</p>
+    <p class="text-body-small">We show in <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.tmp.1529H/abstract" target="_blank">Haggar et al. (2024)</a> that dynamical states are actually far more complicated. Using PCA and UMAP, we show that dynamical state varies along multiple axes, meaning it is important to specify the sense in which a cluster is 'dynamically relaxed'.</p>
+          </div>
+      </div>
+    </div> <!-- .bg-light -->
+  </div> <!-- .bg-light -->
+
+
+  <div class="bg-light">
+    <div class="page-section-lowgap pb-0  wow fadeInUp">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-1 py-3">
           </div>
           <div class="col-lg-7 py-3">
     <h2>Backsplash galaxies</h2>
-    <p class="text-body-small">'Backsplash galaxies' are a class of cluster galaxies that have previously passed through a cluster, but are now located beyond the radius of the cluster in its 'infall regions'.</p>
-    <p class="text-body-small">Because these galaxies are found in the infall regions, they are observationally hard to distinguish from galaxies on their first infall. However, passing through a cluster environment strongly affects the properties of a galaxy, and so backsplash galaxies act as a contaminant when looking at samples of infalling galaxies around clusters.</p>
-    <p class="text-body-small">In <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.6074H/abstract" target="_blank">Haggar et al. (2020)</a>, we use simulations to show that the fraction of backsplash galaxies around a cluster varies between approximately 20% and 80%, and can be predicted using observable bulk properties of the cluster. For example, more dynamically relaxed clusters have a greater backsplash fraction.</p>
-    <p class="text-body-small">Accounting for this backsplash contamination in large surveys will allow the effects of galaxy pre-processing to be disentangled from effects of the cluster, and help us further understand the complex relationship between the properties and environment of a galaxy.</p>
+    <p class="text-body-small">'Backsplash galaxies' are a class of cluster galaxies that have previously passed through a cluster, but are now located beyond the radius of the cluster. They act as a contaminant when studying the effect of environment on galaxy evolution</p>
+    <p class="text-body-small">In <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.6074H/abstract" target="_blank">Haggar et al. (2020)</a>, we show that the fraction of backsplash galaxies around a cluster varies between approximately 20% and 80%. The fraction varies with the dynamical state of a cluster, which can be measured observationally, allowing us to predict the prevalence of backsplash galaxies.</p>
           </div>
           <div class="col-lg-3">
             <div class="img-place custom-img-1">
               <figure>
               <img src="../assets/img/backsplash_path.png" alt="" style="margin-top:40px;width:100%">
-              <figcaption><p style="margin-top:3px; margin-right:0px; margin-left:0px; font-size:9pt; text-align:right">Paths of an infalling galaxy, cluster member and backsplash galaxy, taken from our simulations. Black circle shows the radius of the cluster, and crosses show galaxy positions at <i>z</i> = 0.</p></figcaption>
+              <figcaption><p style="margin-top:3px; margin-right:0px; margin-left:0px; font-size:9pt; text-align:left">Paths of an infalling galaxy, cluster member and backsplash galaxy, taken from our simulations. Black circle shows the radius of the cluster, and crosses show galaxy positions at <i>z</i> = 0.</p></figcaption>
               </figure>
             </div>
           </div>
@@ -124,24 +145,23 @@
 
 
   <div class="bg-light">
-    <div class="page-section pb-0  wow fadeInUp">
+    <div class="page-section-lowgap pb-0  wow fadeInUp">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-1 py-3">
-          </div>
-          <div class="col-lg-7 py-3">
-    <h2>Infalling groups</h2>
-    <p class="text-body-small">Cosmic structure grows heirarchically, with smaller objects merging together to form larger objects. One consequence of this is the accretion of galaxy groups (containing ~10 galaxies) by clusters (~1000 galaxies).</p>
-    <p class="text-body-small">However, in <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.1191H/abstract" target="_blank">Haggar et al. (2021)</a> we find that the properties of simulated galaxy groups are dependent on the type of simulation, and specifically whether a dark matter-only or hydrodynamical simulation is being used. In particular, dark matter-only simulations do not model the central regions of galaxy groups well, leading to an apparent deficit in the number of galaxies there. We also show a similar effect in galaxy clusters.</p>
-    <p class="text-body-small">In <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1316H/abstract" target="_blank">Haggar et al. (2023)</a> we use hydrodynamical simulations to show that galaxy groups are highly disrupted when passing through a galaxy cluster. Groups that enter a cluster are quickly torn apart by tidal forces, so any groups observed nearby to a cluster are almost certainly on their first approach. The fate of individual galaxies in these groups -- whether they are tidally stripped, undergo a merger, etc. -- is strongly dependent on their location within their host group.</p>
           </div>
           <div class="col-lg-3">
             <div class="img-place custom-img-1">
               <figure>
               <img src="../assets/img/dm_hydro.png" alt="" style="width:100%">
-              <figcaption><p style="margin-top:3px; margin-right:0px; margin-left:0px; font-size:9pt; text-align:right">Fractional difference in the distribution of galaxies in the phase space of groups, between hydrodynamical and dark matter-only simulations. Dark red regions show areas with more galaxies in the hydrodynamical simulations, and dark blue for the dark matter-only simulations.</p></figcaption>
+              <figcaption><p style="margin-top:3px; margin-right:0px; margin-left:0px; font-size:9pt; text-align:left">Fractional difference in the distribution of galaxies in the phase space of groups, showing regions with an excess of galaxies in hydrodynamical (red) and dark matter-only (blue) simulations.</p></figcaption>
               </figure>
             </div>
+          </div>
+          <div class="col-lg-7 py-3">
+    <h2>Infalling groups</h2>
+    <p class="text-body-small">Clusters can grow by accreting groups of galaxies, typically containing tens of members, but in <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1316H/abstract" target="_blank">Haggar et al. (2023)</a> we use hydrodynamical simulations to show that groups are very quickly tidally disrupted when entering a cluster. This means that any groups observed nearby to a cluster are almost certainly on their first approach. We also show that galaxies in different parts of these groups undergo different processes, such as tidal stripping and mergers.</p>
+    <p class="text-body-small">In <a class="hlink" href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.1191H/abstract" target="_blank">Haggar et al. (2021)</a> we also show that hydrodynamical simulations are crucial in studying galaxy groups, and that dark matter-only simulations typically do not model the central regions of galaxy groups and clusters well, leading to an apparent deficit in the number of galaxies.</p>
           </div>
       </div>
     </div> <!-- .bg-light -->

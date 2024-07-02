@@ -25,6 +25,7 @@ body {
   font-family: 'Source Sans Pro', Calibri, sans-serif;
   line-height: 1.2;
   color: #000000;
+  background-color: #f0f0f0;
 }
 
 a {
@@ -125,11 +126,16 @@ a.bg-grey:hover, a.bg-grey:focus {
 }
 
 .bg-light {
-  background-color: #FFFFFF !important;
+  background-color: #f0f0f0 !important;
+}
+
+.bg-light-header {
+  background-color: #f0f0f0 !important;
+  padding-top: 70px;
 }
 
 a.bg-light:hover, a.bg-light:focus {
-  background-color: #FFFFFF !important;
+  background-color: #f0f0f0 !important;
 }
 
 .bg-dark {
@@ -142,14 +148,16 @@ a.bg-dark:hover, a.bg-dark:focus {
 
 .text-header {
   font-size: 40px !important;
+  color: #9cd5c2
 }
 
 .text-subheader {
-  color: #888888 !important;
+  color: #BBBBBB !important;
   font-size: 16px !important;
 }
 
 .text-banner {
+  padding-top: 110px;
   font-weight: 800;
   font-size: 52px !important;
 }
@@ -930,12 +938,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 .navbar {
+  position: fixed;
   min-height: 70px;
+  width: 100%;
+  z-index: 1000; /* Ensures the navbar stays on top of other elements */
+  background-color: #222222;
 }
 
 .navbar-brand {
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .navbar-nav {
@@ -951,7 +963,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-light .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 14pt;
-  color: rgba(110, 128, 122, 0.8);
+  color: #BBBBBB;<!--rgba(110, 128, 122, 0.8);-->
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
@@ -962,7 +974,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #117DFF;
+  color: #9cd5c2;
 }
 
 
@@ -1234,6 +1246,13 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   padding-top: 40px;
   padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.page-section-lowgap {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
   overflow: hidden;
 }
 
@@ -1887,9 +1906,9 @@ li {
   border-radius: 40px 0 0 40px;
 }
 
-/* reverse order list counting down from 13 for ordered paper list */
+/* reverse order list counting down from 16 for ordered paper list */
 ol {
-    counter-reset: OrderedList 14;
+    counter-reset: OrderedList 17;
     list-style-type: none;
 }
 
